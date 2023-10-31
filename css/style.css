@@ -171,6 +171,13 @@ ul{
     justify-content: center;
 }
 
+/*Endre størrelse på bilder på artikkelsiden*/
+.bilder-seo img{
+    width: 300px;
+    height: auto;
+}
+/*Slutt*/
+
 .default-flex h3{
     flex-basis: 100%;
 }
@@ -290,6 +297,16 @@ footer{
         margin: auto;
         margin-top: 20px;
     }
+
+
+    .bilder-seo img{
+        width: 700px;
+        height: auto;
+    }
+
+
+
+
 
     footer nav ul li{
         margin-left: 15px;
