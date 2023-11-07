@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    color: #a67a5b;
+    color: #624837;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,9 +21,10 @@ body{
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #a67a5b;
+    color: #624837;
     letter-spacing: 5px;
     margin-left: 42px;
+    width: 100%;
 }
 
 
@@ -31,29 +32,46 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #e8dcb5;
-
+    background-color: #e1dccd;
 }
 
 header nav ul{
     display: flex;
-    gap: 2rem;
+    align-items: baseline;
     list-style: none;
-    padding-left: 5px;
+    padding-left: 1px;
 }
+
+
 
 .header2{
     display: none;
 }
 
+
+
 .sokefelt{
     align-items: center;
-    margin-left: 76px;
+    margin-left: 60px;
     padding-bottom: 5px;
     
 }
 
-h1{
+/*Ikoner i header*/
+.navtekst li a{
+    font-size: 0;
+}
+
+.navtekst li a i{
+    font-size: 15px;
+}
+/*Slutt*/
+
+.forsideh1{
+    text-align: center;
+}
+
+h2{
     text-align: center;
     font-size: 20px;
 }
@@ -74,6 +92,7 @@ main section article form {
 .logginnh1{
     font-size: 25px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .logginnh5{
@@ -87,7 +106,7 @@ main section article form {
 
 a{
     text-decoration: none;
-    color: #a67a5b;
+    color: #624837;
     margin-left: 40px;
 }
 
@@ -96,8 +115,12 @@ footer nav ul li{
     display: flex;
 }
 
+.footer nav ul li a{
+    margin-right: 40px;
+}
+
 .footer{
-    background-color: #e8dcb5;
+    background-color: #e1dccd;
     font-size: 20px;
 }
 
@@ -107,15 +130,6 @@ footer nav ul li{
     padding: 0;
 }
 
-.fa-house{
-    margin-right: 20px;
-}
-.fa-circle-info{
-    margin-left: 20px;
-}
-.fa-location-dot{
-    margin-left: 20px;
-}
 /*Dette er for logg-innskjema*/
 
 .logginn1{
@@ -123,7 +137,6 @@ footer nav ul li{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 0.5rem;
-    text-align: center;
     border-radius: 5px;
     width: 350px;
     height: 200px;
@@ -178,6 +191,19 @@ ul{
 }
 /*Slutt*/
 
+/*tabell*/
+.table, th, td{
+    border: 1px solid;
+}
+
+.table, caption{
+    border: 2px solid;
+}
+/*tabell slutt*/
+
+
+
+
 .default-flex h3{
     flex-basis: 100%;
 }
@@ -193,7 +219,8 @@ ul{
 }
 
 .default-flex article img{
-    width: 100%;
+    width: 300px;
+    height: 300px;
 }
 
 #grid-container{
@@ -259,13 +286,22 @@ footer{
     }
 
     header nav ul{
-        font-size: 25px;
+        font-size: 20px;
     }
 
-
+    .snarveier{
+        display: inline-block;
+    }
+    
+    /*Navigasjon i header*/
+    .navtekst li a{
+        font-size: 15px;
+    }
+    /*Slutt*/
 
     .logginnh1{
         font-size: 40px;
+        text-align: center;
     }
 
     .logginn2{
@@ -304,24 +340,26 @@ footer{
         height: auto;
     }
 
-
-
-
-
     footer nav ul li{
-        margin-left: 15px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .footer{
         margin-top: 20px;
     }
-
+    .footer nav ul li a{
+        margin-right: 40px;
+    }
     /*Endret på mellomrom mellom bokstaver i logo + lagt til margin for å sentrere*/
 
     #logo{
         letter-spacing: 5px;
         margin-left: 60px;    
+    }
+    /*slutt*/
+
+    .sokefelt{
+        margin-left: 110px;
     }
 
     .forsideh1{
@@ -343,7 +381,20 @@ footer{
         width: 396px;
         background-color: #e8dcb5;
     }
- 
+
+
+    /*Satt bredde og høyde på bilder, desktop*/
+    .default-flex article img{
+        width: 100%;
+        height: auto;  
+    }
+    /*Slutt*/
+    /*Bilder på analysesiden*/
+    .bilder-seo img{
+        width: 500px;
+        height: auto;
+    }
+    /*Slutt*/
 }
 
 

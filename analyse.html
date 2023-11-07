@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nn">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,15 @@
             <span>
                 <a href="index.html" id="logo">Askepott Sko</a>
             </span>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #a27442;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars" style="color: #a27442;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-basket-shopping" style="color: #a27442;"></i></a></li>
-                <li><a href="innlogging.html"><i class="fa-solid fa-user" style="color: #a27442;"></i></a></li>
-                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #a27442;"></i></a></li>  
+            <ul class="navtekst">
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Hjem</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-bars" style="color: #624837"></i>Meny</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #624837"></i>Kurv</a></li>
+                <li><a href="innlogging.html"><i class="fa-solid fa-user" style="color: #624837"></i>Profil</a></li>
+                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #624837"></i>Analyse</a></li>  
             </ul>
             <form class="sokefelt">
-                <input type="search" placeholder="Søkeord...">
+                <label>Søk:<input type="search" placeholder="Søkeord..."></label>
                 <input type="submit" value="Gå">
             </form>
         </nav>
@@ -183,17 +183,152 @@
         </section>
         <section>
             <h2>UU-analyse (Accessibility)</h2>
-            <p>Har brukt WebAIM til å gjennomføre en analyse av nettstedet. Dette gjør jeg for å sjekke nettstedets universelle utforminging og for å sørge for at nettstedet er like tilgjengelig for alle uavhengig av fysiske utfordringer. Jeg kommer til å legge ved bilder nedenfor med en forklaring over hva som bør forbedres og hvorfor dette skal gjøres.</p>
-            <articlec class="bilder-seo">
+            <p>Har brukt WebAIM til å gjennomføre en analyse av nettstedet. Dette gjør jeg for å sjekke nettstedets universelle utforminging og for å sørge for at nettstedet er like tilgjengelig for alle uavhengig av fysiske utfordringer(syn og motorikk). Jeg kommer til å legge ved bilder nedenfor med en forklaring over hva som bør forbedres og hvorfor dette skal gjøres.</p>
+            <article class="bilder-seo">
                 <h3>UU-analyse forside</h3>
-                <img src="img/Skjermbilde-2023-11-01-kl-13.49.23.png" alt="Liste over 7 error som er funnet på siden. Tomme linker og mangler lable-attribut.">
+                <img src="img/Skjermbilde2023-11-02-kl-21.32.13.png" alt="WebAIM analyse, liste over advarsler og feil som er funnet på siden.">
                 <ul>
                     <li>
                         <p>1.Mangler "label" på form tag som utgjør søkefeltet.</p>
                     </li>
-                </ul>
-                
+                    <li>
+                        <p>2.Linker som er tomme.</p>
+                    </li>
+                    <li>
+                        <p>3.For lav kontrast mellom tekst og bakgrunnsfarge på nettsiden.</p>
+                    </li>
+                    <li>
+                        <p>4.H-tagger i feil rekkefølge.</p>
+                    </li>
+                    <li>
+                        <p>5.Linker som linker opp til samme html-dokument.</p>
+                    </li>
+                </ul>    
             </article>
+            <article class="bilder-seo">
+                <h3>UU-analyse produktside</h3>
+                <img src="img/Skjermbilde2023-11-02-kl-21.30.28.png" alt="WebAIM analyse, liste over advarsler og feil som er funnet på siden.">
+                <ul>
+                    <li>
+                        <p>Ser her at jeg får samme alerts/errors som på forsiden, men med et annet antall. Velger derfor å ikke skrive en liste da den blir lik som listen over.</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="bilder-seo">
+                <h3>UU-analyse logginn</h3>
+                <img src="img/Skjermbilde2023-11-02-kl-21.44.40.png" alt="WebAIM analyse, liste over advarsler og feil som er funnet på siden.">
+                <ul>
+                    <li>
+                        <p>Ser her at jeg får samme alerts/errors som på forsiden, men med et annet antall. Velger derfor å ikke skrive en liste da den blir lik som listen over.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Chat-GPT</h2>
+            <p>Har brukt Chat-GPT til å gjøre en analyse av koden på nettstedet fra et SEO og UU perspektiv.</p>
+            <article class="bilder-seo">
+                <h3>Forside</h3>
+                <h4>Universell utforming</h4>
+                <img src="img/Chat-gpt-index-2023-11-03-kl-10.36.10.png" alt="Chat-GPT analyse av koden på nettstedet, universell utforming.">
+                <h4>SEO</h4>
+                <img src="img/Chat-gpt-index-2023-11-03-kl-10.37.14.png" alt="Chat-GPT analyse av koden på nettstedet, SEO">
+            </article>
+            <article class="bilder-seo">
+                <h3>Produktside</h3>
+                <h4>Universell utforming</h4>
+                <img src="img/Chat-gpt-index-2023-11-03-kl-10.36.10.png" alt="Chat-GPT analyse av koden på produktsiden, universell utforming">
+                <h4>SEO</h4>
+                <img src="img/Chat-gpt-index-2023-11-03-kl-10.37.14.png" alt="Chat-GPT analyse av koden på produktsiden, SEO">
+            </article>
+            <article class="bilder-seo">
+                <h3>Logginn</h3>
+                <h4>Universell utforming</h4>
+                <img src="img/Chat-gpt-logginn-2023-11-03-kl-10.50.15.png" alt="Chat-GPT analyse av koden på logginn-siden, universell utforming">
+                <h4>SEO</h4>
+                <img src="img/Chat-gpt-logginn-2023-11-03-kl-10.51.02.png" alt="Chat-GPT analyse av koden på logginn-siden, SEO">
+            </article>
+        </section>
+        <section>
+            <h4>Løsningsforslag og tips fra Chat-GPT:</h4>
+            <article class="bilder-seo">
+                <img src="img/Skjermbilde-2023-11-05-kl-17.35.58.png" alt="En liste med Chat-GPT sin vurdering av hva som er mulig å forbedre i html-koden for å gjøre nettstedet mer tilgjengelig.">
+            </article>
+            <article class="bilder-seo">
+                <img src="img/Skjermbilde-2023-11-03-kl-10.20.49.png" alt="En liste med Chat-GPT sin vurdering av hva som er mulig å forbedre i html-koden for å gjøre nettstedet mer tilgjengelig.">
+            </article>
+            <article class="bilder-seo">
+                <img src="img/Skjermbilde-2023-11-03-kl-10.21.52.png" alt="En liste med Chat-GPT sin vurdering av hva som er mulig å forbedre i html-koden for å gjøre nettstedet mer tilgjengelig.">
+            </article>
+        </section>
+        <section>            
+            <table class="table">
+                <caption>Sammenlikning av analyse</caption>
+                <tr>
+                    <th scope="col">Lighthouse</th>
+                    <th scope="col">WebAIM</th>
+                    <th scope="col">Chat-GPT</th>
+                </tr>
+                <tr>
+                    <td>Bilder mangler spesifikk høyde og bredde.</td>
+                    <td>Mangler label-tag.</td>
+                    <td>Mangler nøkkelord.</td>
+                </tr>
+                <tr>
+                    <td>Endre bildeformat fra PNG til WebP eller AVIF.</td>
+                    <td>Tomme linker. De er ikke linket opp til en nettside.</td>
+                    <td>Forbedre title-taggen. Forbedre tekst som står i fanen.</td>
+
+                </tr>
+                <tr>
+                    <td>Tilpasse bildestr til mobil.</td>
+                    <td>Endre kontrast mellom tekst og bakgrunn.</td>
+                    <td>Legge til strukturell data, anbefalt (Schema.ord markup)</td>
+                </tr>
+                <tr>
+                    <td>Legge til "media-all".</td>
+                    <td>H-tagger ligger ikke i riktig rekkefølge.</td>
+                    <td>Endre kontrast mellom tekst og bakgrunn.</td>
+                </tr>
+                <tr>
+                    <td>Endre kontrast mellom tekst og bakgrunn.</td>
+                    <td>Linker er linket opp til samme nettside.</td>
+                    <td>Mangler label-tag.</td>
+                </tr>
+                <tr>
+                    <td>Ikoner mangler beskrivende tekst.</td>
+                    <td></td>
+                    <td>Mangler beskrivende alt-attributter på bilder.</td>
+                </tr>
+                <tr>
+                    <td>H-tagger ligger ikke i riktig rekkefølge.</td>
+                    <td></td>
+                    <td>Endre lang-attributtet til "nn" istedet for "en".</td>
+                </tr>
+                <tr>
+                    <td>Mangler metadata.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Linker er ikke crawl-bare.</td>
+                    <td></td>
+                    <td>H-tagger ligger ikke i rikitg rekkefølge.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Forbedrende tiltak og ny analyse</h2>
+            <ul>
+                <li>1.Endret farge på tekst og ikoner til en mørkere farge.</li>
+                <li>2.Endret bakgrunnsfargen på header og footer.</li>
+                <li>3.Linket alle tomme linker opp til forsiden(index.html)</li>
+                <li>4.Lagt H-tagger i riktig semantisk rekkefølge.</li>
+                <li>5.Lagt til "label" på søkefeltet.</li>
+                <li>6.Lagt til fast høyde og bredde på bilder for mobil.</li>
+                <li>7.Endret bildeformat på bilder på forsiden og 6 bilder på produktsiden.</li>
+                <li>8.Lagt til beskrivende tekst til linker på nettsiden(ikoner i header/footer).</li>
+            </ul>
         </section>
 
 
@@ -222,12 +357,10 @@
     </main>
     <footer class="footer">
         <nav>
-            <ul>
-                <li><i class="fa-solid fa-circle-info" style="color: #a27442;"></i></li>
-                <li><i class="fa-solid fa-location-dot" style="color: #a27442;"></i></li>
-                <li>
-                <a href="index.html"><i class="fa-solid fa-house" style="color: #a27442;"></i></a>
-                </li>
+            <ul class="navtekst">
+                <li><a href="index.html"><i class="fa-solid fa-circle-info" style="color: #624837"></i>Kundeservice</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #624837"></i>Finn oss</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Forside</a></li>
             </ul>
         </nav>
     </footer>
