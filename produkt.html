@@ -5,11 +5,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="description" content="Unike og flotte lammeskinnstøfler med merinoull. Høy komfort og behagelige å bruke.">
+    <meta name="author" content="Askepott Sko AS">
     <link href="css/icon/css/fontawesome.css" rel="stylesheet">
     <link href="css/icon/css/brands.css" rel="stylesheet">
     <link href="css/icon/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Produktside</title>
+    <title>Askepott Sko - Tøfler i høy kvalitet.</title>
 </head>
 <!--Alle bilder som er brukt på denne siden er generert av Leonardo. AI https://app.leonardo.ai/ai-generations-->
 <!--Farger brukt på nettsiden er hentet her https://in.pinterest.com/pin/439382507397806658/-->
@@ -21,36 +23,55 @@
             <span>
                 <a href="index.html" id="logo">Askepott Sko</a>
             </span>
+            <a href="#main" class="skip">Gå til hovedinnhold</a>
             <ul class="navtekst">
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837;"></i>Hjem</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-bars" style="color: #624837;"></i>Meny</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #624837"></i>Kurv</a></li>
-                <li><a href="innlogging.html"><i class="fa-solid fa-user" style="color: #624837"></i>Profil</a></li>
-                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #624837"></i>Analyse</a></li>  
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837;"></i>Hjem</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-bars" aria-label="Åpne meny" role="link" style="color: #624837;"></i>Meny</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv" role="link" style="color: #624837"></i>Kurv</a></li>
+                <li><a href="innlogging.html"><i class="fa-solid fa-user" aria-label="Brukerprofil" role="link" style="color: #624837"></i>Profil</a></li>
+                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" aria-label="Analyseside" role="link" style="color: #624837"></i>Analyse</a></li>  
             </ul>
-            <form class="sokefelt">
+            <form class="sokefelt" role="search">
                 <label>Søk:<input type="search" placeholder="Søkeord..."></label>
                 <input type="submit" value="Gå">
             </form>
         </nav>
     </header>
-    <main>
+    <main itemscope itemtype="https://schema.org/Product">
         <br>
-        <section class="sti">
-            <a href="index.html">Hjem</a>
-            <a href="produkt.html">Løpesko</a>
-            <a>Vintersko</a>
+        <section class="sti" aria-label="Brødsti" role="navigation">
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html"><span itemprop="name">Hjem -</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="produkt.html"><span itemprop="name">Løpesko -</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="produkt.html"><span itemprop="name">Tøfler</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+            </ul>
         </section>
             <h2 class="produkth1">Tøfler</h2>
         <section class="default-flex">
             <article>
                 <img src="img/Toffelhoy_v7_White_background_light_brown_lambswool_slippers_3_1_.webp" alt="brune tofler med hvit pels">
-                <h3>Beige tøfler</h3>
+                <h3 itemprop="name">Beige tøfler</h3>
+                <span itemprop="aggregateRating" itemtype="https://schema.org/AggregateRating" itemscope>
+                    <meta itemprop="reviewCount" content="60">
+                    <meta itemprop="ratingValue" content="4.7">
+                </span>
             </article>
 
             <article>
                 <img src="img/Espadrillo_v7_White_background_light_brown_lambswool_slippers_6.webp" alt="beige tofler i espadrillo stil">
-                <h3>Beige espadrillo-tøfler</h3>  
+                <h3>Beige espadrillo-tøfler</h3>
             </article>
 
             <article>
@@ -92,9 +113,9 @@
     <footer class="footer">
         <nav>
             <ul>
-                <li><a href="index.html"><i class="fa-solid fa-circle-info" style="color: #624837;"></i>Kundeservice</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #624837;"></i>Finn oss</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Forside</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-circle-info" aria-label="Kundeservice" role="link" style="color: #624837;"></i>Kundeservice</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-location-dot" aria-label="Finn oss" role="link" style="color: #624837;"></i>Finn oss</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837"></i>Forside</a></li>
             </ul>
         </nav>
     </footer>

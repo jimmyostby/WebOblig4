@@ -41,7 +41,10 @@ header nav ul{
     list-style: none;
     padding-left: 1px;
 }
-
+main section ul li{
+    list-style: none;
+    display: inline-block;
+}
 
 
 .header2{
@@ -49,21 +52,10 @@ header nav ul{
 }
 
 
-
 .sokefelt{
     align-items: center;
     margin-left: 60px;
-    padding-bottom: 5px;
-    
-}
-
-.skip{
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    padding-bottom: 5px;    
 }
 
 /*Ikoner i header*/
@@ -241,6 +233,9 @@ ul{
     min-width: 300px;
     justify-content: center;
 }
+
+
+
 
 .default-flex article img{
     width: 300px;
@@ -423,6 +418,12 @@ footer{
         height: auto;
     }
     /*Slutt*/
+
+    .analyse-main{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
 }
 
 

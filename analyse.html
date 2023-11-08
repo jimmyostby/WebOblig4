@@ -17,32 +17,33 @@
     <header>
         <nav>
             <span>
-                <a href="index.html" id="logo">Askepott Sko</a>
+                <a href="index.html" id="logo" aria-label="Snarvei til forside">Askepott Sko</a>
             </span>
+            <a href="#main" class="skip">Gå til hovedinnhold</a>
             <ul class="navtekst">
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Hjem</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-bars" style="color: #624837"></i>Meny</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #624837"></i>Kurv</a></li>
-                <li><a href="innlogging.html"><i class="fa-solid fa-user" style="color: #624837"></i>Profil</a></li>
-                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #624837"></i>Analyse</a></li>  
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837"></i>Hjem</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-bars" aria-label="Åpne meny" role="link" style="color: #624837"></i>Meny</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv" role="link" style="color: #624837"></i>Kurv</a></li>
+                <li><a href="innlogging.html"><i class="fa-solid fa-user" aria-label="Brukerprofil" role="link" style="color: #624837"></i>Profil</a></li>
+                <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" aria-label="Analyseside" role="link" style="color: #624837"></i>Analyse</a></li>  
             </ul>
-            <form class="sokefelt">
+            <form class="sokefelt" role="search">
                 <label>Søk:<input type="search" placeholder="Søkeord..."></label>
                 <input type="submit" value="Gå">
             </form>
         </nav>
     </header>
-    <main>
+    <main class="analyse-main">
         <h1>Analyse av nettstedet</h1>
         <section>
-            <h2>Google trends - analyse av nøkkelord</h2>
+            <h2>1.Google trends - analyse av nøkkelord</h2>
             <article class="bilder-seo">
                 <img src="img/Nøkkelord_2023-10-28_kl._12.36.28_Middels.jpeg" alt="Sammenligning av nøkkelord på nettstedet, tøfler,høstsko,vintersko,tøfler">
             </article>
             <p>Har brukt Google Trends til å foreta en analyse av eksisterende nøkkelord på nettstedet. Etter resultatene å bedømme ser jeg at det er hensiktsmessig å skifte ut noen av ordene for å tilpasse nettstedet etter søketrendene som blir brukt i gamle Østfold fylke. Nettbutikken har tilhørighet til dette fylket, og ved å implementere nøkkelord etter geografiske søketrender så vil det forhåpentligvis være med på å generere mer trafikk til nettstedet.</p>
         </section>
-        <section>
-            <h2>SEO - analyse av forside</h2>
+        <section class="default-flex2">
+            <h2>2.SEO - analyse av forside</h2>
                 <article class="bilder-seo">
                     <h3>Forside mobil- Performance</h3>
                     <img src="img/Skjermbilde-2023-10-28-kl-17.09.08.png" alt="Skjermbilde av SEO-analyse av forsiden performance">
@@ -370,16 +371,15 @@
                 <img src="img/NyWebAimLogginn2023-11-07kl13.54.26.png" alt="Bilde som viser nye resultater av WebAIM for logginn">
             </article>
             <article>
-                <h4>Forklaring:</h4>
                 <p>Som illustrert på bildene over så har endringene jeg har gjort hatt god effekt (Se liste over forbedringer lengre opp). Lighthouse analysen av produktsiden og logginn-siden viser en SEO på 83%/78%. Dette er fordi linker i footeren ikke hadde beskrivende tekst, og at linkene var tomme. Dette har jeg rettet på i etterkant av analysen.</p>
             </article>
         </section>
         <section>
-            <h2>Test av skjermleser</h2>
+            <h2>3.Tilgjengelighet-skjermoppleser</h2>
             <p>Skjermleserverktøyet leste opp alt på nettsiden på norsk, men da den skulle lese opp ikonene i navigasjonen ble dette gjort på engelsk. Hvorfor dette skjedde er jeg noe usikker på, med tanke på at språket i html-dokumentene er satt til "nn". Den tok pause på ca 1-2 sekunder pr. del den leste opp og leste ting noe raskt.Dette er noe man kan justere i instillinger på maskinen. Utover dette så fikk den med seg alt på alle sidene. En annen utfordring var at den leste opp alt i headeren før den kom til hovedinnholdet på nettsiden, dette tok unødvendig tid og kan skape irritasjon hos en bruker av dette verktøyet.</p>
         </section>
         <section>
-            <h2>Test av tastaturnavigasjon</h2>
+            <h2>3.Tilgjengelighet-Tastaturnavigasjon</h2>
             <p>Har kjørt en test med navigering av tastatur på nettstedet. Den når tak i alt som er av innhold på siden og man kan navigere seg frem og tilbake, samt kommer man seg videre inn på de andre nettsidene. Jeg lister opp noen utfordringer nedenfor:</p>
             <ul>
                 <li>Når man skal bla seg gjennom navigasjonen i header, tekst under bilder og navigasjonen som ligger i footer så må man trykke "tab" 3 ganger før man kommer videre.</li>
@@ -387,6 +387,15 @@
                 <li>Det går ikke an å bla seg tilbake til header fra hovedinnhold. Kun mulig å bla seg tilbake i inneværende seksjon.</li>
                 <li>Det går ikke an å bla seg til hovedinnhold fra footer.</li>
             </ul>
+        </section>
+        <section>
+            <h2>3.ARIA-attributter</h2>
+            <p>Har lagt til relevante ARIA-attributter på alle nettsidene. Har lagt det på ikoner i header/footer, brødsti og søkefelt.</p>
+        </section>
+        <section class="bilder-seo">
+            <h2>Microdata</h2>
+            <p>Har lagt til microdata på brødsmulestien og på det ene produktkortet.</p>
+            <img src="img/Microdata2023-11-08kl15.44.09.png" alt="Bilde som viser at microdata er validert i Rich Results.">
         </section>
 
 
@@ -416,9 +425,9 @@
     <footer class="footer">
         <nav>
             <ul class="navtekst">
-                <li><a href="index.html"><i class="fa-solid fa-circle-info" style="color: #624837"></i>Kundeservice</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #624837"></i>Finn oss</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Forside</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-circle-info" aria-label="Kundeservice" role="link" style="color: #624837"></i>Kundeservice</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-location-dot" aria-label="Finn oss" role="link" style="color: #624837"></i>Finn oss</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837"></i>Forside</a></li>
             </ul>
         </nav>
     </footer>

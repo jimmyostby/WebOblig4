@@ -4,29 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="description" content="Logg inn på din profil eller opprett ny bruker her.">
+    <meta name="author" content="Askepott Sko AS">
     <link href="css/icon/css/fontawesome.css" rel="stylesheet">
     <link href="css/icon/css/brands.css" rel="stylesheet">
     <link href="css/icon/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Logg inn</title>
+    <title>Askepott Sko - Logg inn</title>
 </head>
 <body>
     <!--Farger brukt på nettsiden er hentet her https://in.pinterest.com/pin/439382507397806658/-->
     <div id="grid-container">
-        <a href="#main" class="skip">Skip to main content</a>
         <header>
             <nav>
                 <span>
                     <a href="index.html" id="logo">Askepott Sko</a>
                 </span>
+                <a href="#main" class="skip">Gå til hovedinnhold</a>
                 <ul class="navtekst">
-                    <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837;"></i>Hjem</a></li>
-                    <li><a href="index.html"><i class="fa-solid fa-bars" style="color: #624837;"></i>Meny</a></li>
-                    <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #624837"></i>Kurv</a></li>
-                    <li><a href="innlogging.html"><i class="fa-solid fa-user" style="color: #624837"></i>Profil</a></li>
-                    <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #624837"></i>Analyse</a></li>  
+                    <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837;"></i>Hjem</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-bars" aria-label="Åpne meny" role="link" style="color: #624837;"></i>Meny</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv" role="link" style="color: #624837"></i>Kurv</a></li>
+                    <li><a href="innlogging.html"><i class="fa-solid fa-user" aria-label="Brukerprofil" role="link" style="color: #624837"></i>Profil</a></li>
+                    <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" aria-label="Analyseside" role="link" style="color: #624837"></i>Analyse</a></li>  
                 </ul>
-                <form class="sokefelt">
+                <form class="sokefelt" role="search">
                     <label>Søk:<input type="search" placeholder="Søkeord..."></label>
                     <input type="submit" value="Gå">
                 </form>
@@ -34,7 +36,7 @@
         </header>
     <main id="main">   
         <br>
-        <section class="sti">
+        <section class="sti" aria-label="Brødsti" role="navigation">
              <a href="index.html">Hjem -</a>
              <a href="produkt.html">Tøfler -</a>
              <a href="innlogging.html">Logg Inn</a>
@@ -69,9 +71,9 @@
     <footer class="footer">
         <nav>
             <ul>
-                <li><a href="index.html"><i class="fa-solid fa-circle-info" style="color: #624837"></i>Kundeservice</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #624837"></i>Finn oss</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #624837"></i>Forside</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-circle-info" aria-label="Kundeservice" role="link" style="color: #624837"></i>Kundeservice</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-location-dot" aria-label="Finn oss" role="link" style="color: #624837"></i>Finn oss</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-label="Hjem" role="link" style="color: #624837"></i>Forside</a></li>
             </ul>
         </nav>
     </footer>
