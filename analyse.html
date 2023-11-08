@@ -13,6 +13,7 @@
 
 <body>
     <div id="grid-container">
+        <a href="#main" class="skip">Skip to main content</a>
     <header>
         <nav>
             <span>
@@ -318,16 +319,73 @@
             </table>
         </section>
         <section>
-            <h2>Forbedrende tiltak og ny analyse</h2>
+            <h2>Forbedrende tiltak og forklarende bilder</h2>
+            <article class="bilder-seo">
             <ul>
-                <li>1.Endret farge på tekst og ikoner til en mørkere farge.</li>
+                <li>1.Endret farge på tekst og ikoner til en mørkere farge.
+                    <img src="img/Nyheader2023-11-06-kl-17.49.48.png" alt="Bilde som viser endret bakgrunnsfarge til lyse beige og endret farge på tekst til en mørkere brun.">
+                </li>
                 <li>2.Endret bakgrunnsfargen på header og footer.</li>
-                <li>3.Linket alle tomme linker opp til forsiden(index.html)</li>
+                <li>3.Linket alle tomme linker opp til forsiden(index.html)
+                    <img src="img/Linker2023-11-06-kl-18.28.16.png" alt="Bilde av html-koden som viser at alle ikoner i header er linket opp til et html-dokument.">
+                </li>
                 <li>4.Lagt H-tagger i riktig semantisk rekkefølge.</li>
-                <li>5.Lagt til "label" på søkefeltet.</li>
+                <li>5.Lagt til "label" på søkefeltet.
+                    <img src="img/Sokefelt2023-11-06-kl-19.00.54.png" alt="Bilde av søkefelt som viser at det er blitt lagt til en label for søk.">
+                </li>
                 <li>6.Lagt til fast høyde og bredde på bilder for mobil.</li>
                 <li>7.Endret bildeformat på bilder på forsiden og 6 bilder på produktsiden.</li>
-                <li>8.Lagt til beskrivende tekst til linker på nettsiden(ikoner i header/footer).</li>
+                <li>8.Lagt til beskrivende tekst til linker på nettsiden(ikoner i header/footer).
+                    <img src="img/Linktekst2023-11-07-kl13.35.56.png" alt="Bilde som viser beskrivende tekst til ikoner i navigeringen i headeren.">
+                </li>
+            </ul>
+            </article>
+        </section>
+        <section class="bilder-seo">
+            <h2>Resultater:</h2>
+            <article>
+                <h3>Lighthouse forside</h3>
+                <img src="img/Nyanalyse-index2023-11-07-kl-12.50.07.png" alt="Bilde som viser nye resultater av SEO analyse for forsiden.">
+            </article>
+            <article>
+                <h3>Lighthouse produktside</h3>
+                <img src="img/NyanalyseProdukt2023-11-07-kl12.53.52.png" alt="Bilde som viser nye resultater av SEO analyse for produktsiden.">
+            </article>
+            <article>
+                <h3>Lighthouse logginn</h3>
+                <img src="img/NyanalyseLogginn2023-11-07-kl13.15.12.png" alt="Bilde som viser nye resultater av SEO analyse for logginn.">
+            </article>
+        </section>
+        <section class="bilder-seo">
+            <article>
+                <h3>WebAIM forside</h3>
+                <img src="img/NyWebAimIndex2023-11-07kl13.48.38.png" alt="Bilde som viser nye resultater av WebAIM for forsiden.">
+            </article>
+            <article>
+                <h3>WebAIM produktside</h3>
+                <img src="img/NyWebAimProdukt2023-11-07-kl13.52.12.png" alt="Bilde som viser nye resultater av WebAIM for produktsiden.">
+            </article>
+            <article>
+                <h3>WenAIM logginn</h3>
+                <img src="img/NyWebAimLogginn2023-11-07kl13.54.26.png" alt="Bilde som viser nye resultater av WebAIM for logginn">
+            </article>
+            <article>
+                <h4>Forklaring:</h4>
+                <p>Som illustrert på bildene over så har endringene jeg har gjort hatt god effekt (Se liste over forbedringer lengre opp). Lighthouse analysen av produktsiden og logginn-siden viser en SEO på 83%/78%. Dette er fordi linker i footeren ikke hadde beskrivende tekst, og at linkene var tomme. Dette har jeg rettet på i etterkant av analysen.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Test av skjermleser</h2>
+            <p>Skjermleserverktøyet leste opp alt på nettsiden på norsk, men da den skulle lese opp ikonene i navigasjonen ble dette gjort på engelsk. Hvorfor dette skjedde er jeg noe usikker på, med tanke på at språket i html-dokumentene er satt til "nn". Den tok pause på ca 1-2 sekunder pr. del den leste opp og leste ting noe raskt.Dette er noe man kan justere i instillinger på maskinen. Utover dette så fikk den med seg alt på alle sidene. En annen utfordring var at den leste opp alt i headeren før den kom til hovedinnholdet på nettsiden, dette tok unødvendig tid og kan skape irritasjon hos en bruker av dette verktøyet.</p>
+        </section>
+        <section>
+            <h2>Test av tastaturnavigasjon</h2>
+            <p>Har kjørt en test med navigering av tastatur på nettstedet. Den når tak i alt som er av innhold på siden og man kan navigere seg frem og tilbake, samt kommer man seg videre inn på de andre nettsidene. Jeg lister opp noen utfordringer nedenfor:</p>
+            <ul>
+                <li>Når man skal bla seg gjennom navigasjonen i header, tekst under bilder og navigasjonen som ligger i footer så må man trykke "tab" 3 ganger før man kommer videre.</li>
+                <li>For å komme til hovedinnholdet på nettsiden må man trykke seg igjennom alt som ligger i header.</li>
+                <li>Det går ikke an å bla seg tilbake til header fra hovedinnhold. Kun mulig å bla seg tilbake i inneværende seksjon.</li>
+                <li>Det går ikke an å bla seg til hovedinnhold fra footer.</li>
             </ul>
         </section>
 
