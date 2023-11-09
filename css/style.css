@@ -80,12 +80,17 @@ main section ul li{
 
 /*Slutt*/
 
-.analyse-main h1, h2, h3, p{
+.analyse-main h1, h2, h3, h4, p{
     text-align: center;
 }
 
 .analyse-main ul{
     margin-right: 30px;
+}
+
+.analyse-main{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .forsideh1{
